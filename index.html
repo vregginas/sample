@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="navbar">
+        <button class="btn" id="folder"><i class="fas fa-ballot fa-2x"></i></i></button>
+        <button class="btn" id="ball"><i class="fas fa-futbol fa-2x"></i></button>
+        <button class="btn" id="ppl"><i class="fas fa-user-friends fa-2x"></i></button>
+        <button class="btn" id="bino"><i class="far fa-binoculars fa-2x"></i></button>
+        <button class="btn" id="achiev"><i class="far fa-star fa-2x"></i></button>
+        
+        <button class="btn" id="help"><i class="far fa-question-circle fa-2x"></i></button>
+        <button class="btn" id="settings"><i class="far fa-cog fa-2x"></i></button>
+        <button class="btn" id="exit"><i class="fas fa-sign-out-alt fa-2x"></i></button>
+    </div>
+    <div class="sidelist">
+        <h2>Players</h2>
+        <h3 class="selected">Overview</h3>
+        <h3>Custom Players</h3>
+        <div class="bar"></div>
+        <h4>*Brankovic</h4>
+        <h4>*Ivanovic</h4>
+    </div>
+    <div class="main">
+     <section class="upper">
+        <h1>All players on the watchlist.</h1>
+        <div class="par"><p>Please <a href="#">upgrade</a> your plan to add more players.</p></div>
+     </section>
+     <div class="filter">
+         <div class="pos">
+         
+         <label for="positions">POSITION</label>
+         <select name="position" id="position">
+             <option value="all">All positions</option>
+             <option value="striker">Strikers</option>
+             <option value="defender">Defenders</option>
+         </select>
+        </div>
+        <div class="aged">
+         <label for="age">AGE</label>
+         <div class="value"><p>00</p></div>
+         <input type="range" name="age" id="age" min="17" max="40" value="0">
+        </div>
+        <div class="cat"></div>
+         <label for="category">CATEGORY</label>
+         <ul name="category" id="category">
+             <li><i class="far fa-star" id="grey"></i></li>
+             <li><i class="far fa-star" id="yellow"></i></li>
+             <li><i class="far fa-star" id="orange"></i></li>
+             <li><i class="far fa-star" id="red"></i></li>
+         </ul>
+        </div>
+     </div>
+     <div class="table">
+        <table>
+            <tr>
+              <th>SORT PLAYER</th>
+              <th>AGE</th>
+              <th>COUNTRY</th>
+              <th>TEAM</th>
+              <th>IN TEAM SINCE</th>
+              <th>CONTRACT UNTIL</th>
+              <th>CATEGORY</th>
+            </tr>
+            <tr id="bran">
+              <td class="name"><i class="fas fa-male"></i>Brankovic*</td>
+              <td>19</td>
+              <td>Poland</td>
+              <td><i class="fas fa-sitemap"></i>Polish Power</td>
+              <td>-</td>
+              <td>-</td>
+              <td><i class="far fa-star yellow"></i></td>
+
+            </tr>
+            <tr id="ivan">
+                <td class="name"><i class="fas fa-male"></i>Ivanovic*</td>
+                <td>25</td>
+                <td>Poland</td>
+                <td><i class="fas fa-sitemap"></i>Polish Power</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="far fa-star red"></i></td>
+  
+            </tr>
+          </table>
+     </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
